@@ -17,7 +17,7 @@ public class HelloFun {
     public Map<String,Object> getFun(){
         Map<String,Object> map=new HashMap<String,Object>();
         map.put("status","0");
-        map.put("data","hello new fun");
+        map.put("data","hello new fun1");
         return map;
     }
 }

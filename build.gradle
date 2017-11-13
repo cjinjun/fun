@@ -12,18 +12,18 @@ tasks.withType(JavaCompile) {
 	options.encoding = 'UTF-8'
 }
 
-
-
 repositories {
-        
+     mavenLocal()
      maven { url "http://repo.maven.apache.org/maven2" }
+     maven {url 'https://maven.aliyun.com/nexus/content/groups/public/'}
 }
 dependencies {
     compile(group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:'1.5.8.RELEASE') {
-exclude(module: 'spring-boot-starter-tomcat')
+        exclude(module: 'spring-boot-starter-tomcat')
     }
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-undertow', version:'1.5.8.RELEASE'
+    compile 'com.xiaoleilu:hutool-all:3.2.0'
     testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:'1.5.8.RELEASE') {
-exclude(module: 'commons-logging')
+        exclude(module: 'commons-logging')
     }
 }

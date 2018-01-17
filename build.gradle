@@ -23,6 +23,7 @@ dependencies {
     }
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-undertow', version:'1.5.8.RELEASE'
     compile 'com.xiaoleilu:hutool-all:3.2.0'
+    compile 'com.squareup.okhttp3:okhttp:3.9.1'
     testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:'1.5.8.RELEASE') {
         exclude(module: 'commons-logging')
     }
